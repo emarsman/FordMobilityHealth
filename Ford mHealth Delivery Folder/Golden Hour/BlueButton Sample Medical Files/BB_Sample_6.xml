@@ -1,0 +1,2069 @@
+<?xml-stylesheet type="text/xsl" href="http://ccd-bluebutton.googlecode.com/svn/trunk/Bluebutton/ccd/xslt/CCDtoBlueButtonTxt_IE.xsl"?>
+<ClinicalDocument
+    xmlns = "urn:hl7-org:v3"
+    xmlns:voc = "urn:hl7-org:v3/voc"
+    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation = "urn:hl7-org:v3 ../cda/Schemas/CDA.xsd">
+    <realmCode code = "US"/>
+    <typeId extension = "POCD_HD000040" root = "2.16.840.1.113883.1.3"/>
+    <templateId root = "2.16.840.1.113883.10.20.1"/>
+    <templateId root = "2.16.840.1.113883.3.27.1776"/>
+    <templateId root = "2.16.840.1.113883.10.20.3"/>
+    <templateId root = "2.16.840.1.113883.3.88.11.32.1"/>
+    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+    <id
+        assigningAuthorityName = "eClinicalWorks"
+        extension = "24113"
+        root = "2.16.840.1.113883.4.391.1"/>
+    <code
+        code = "34133-9"
+        codeSystem = "2.16.840.1.113883.6.1"
+        codeSystemName = "LOINC"
+        displayName = "SUMMARIZATION OF EPISODE NOTE"/>
+    <title> TEST FACILITY TEST EMR3</title>
+    <effectiveTime value = "20110223102952+0000"/>
+    <confidentialityCode code = "N" codeSystem = "2.16.840.1.113883.5.25"/>
+    <languageCode code = "en-US"/>
+    <recordTarget>
+        <patientRole classCode = "PAT">
+            <id
+                assigningAuthorityName = "eClinicalWorks"
+                extension = "178"
+                root = "2.16.840.1.113883.4.391.1"/>
+            <addr>
+                <streetAddressLine>5 georgetown dr</streetAddressLine>
+                <city>framingham</city>
+                <state>MA</state>
+                <country>USA</country>
+                <postalCode>01702</postalCode>
+            </addr>
+            <telecom use = "HP" value = "222-111-2222"/>
+            <patient>
+                <name>
+                    <given>Test</given>
+                    <family>Patient1</family>
+                </name>
+                <administrativeGenderCode code = "F" codeSystem = "2.16.840.1.113883.5.1"/>
+                <birthTime value = "19781111"/>
+                <raceCode
+                    codeSystem = "2.16.840.1.113883.6.238"
+                    displayName = "UNK"
+                    nullFlavor = "NA"/>
+                <ethnicGroupCode
+                    codeSystem = "2.16.840.1.113883.6.238"
+                    displayName = "UNK"
+                    nullFlavor = "NA"/>
+                                <languageCommunication>
+                                        <templateId root='2.16.840.1.113883.3.88.11.83.2'/>
+                                        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.2.1'/>
+                                        <languageCode code='fr-CN' />
+                                        <preferenceInd value='true'/>
+                                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author>
+        <time value = "20110223"/>
+        <assignedAuthor>
+            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+            <addr/>
+            <telecom/>
+            <assignedPerson>
+                <name>
+                    <given>Sam,Multi</given>
+                    <family>Willis</family>
+                </name>
+            </assignedPerson>
+            <representedOrganization>
+                <id root = "2.16.840.1.113883.4.391.19"/>
+                <name>eClinicalWorks</name>
+                <telecom/>
+                <addr/>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+    <informant>
+        <assignedEntity>
+            <id nullFlavor = "NI"/>
+            <addr/>
+            <telecom/>
+            <assignedPerson>
+                <name>
+                    <given>Sam,Multi</given>
+                    <family>Willis</family>
+                </name>
+            </assignedPerson>
+            <representedOrganization>
+                <name> TEST FACILITY TEST EMR3</name>
+                <telecom/>
+                <addr/>
+                <asOrganizationPartOf>
+                    <effectiveTime value = "20110223"/>
+                    <wholeOrganization>
+                        <id root = "2.16.840.1.113883.4.391.1.11113"/>
+                        <name> TEST FACILITY TEST EMR3</name>
+                        <telecom/>
+                        <addr/>
+                    </wholeOrganization>
+                </asOrganizationPartOf>
+            </representedOrganization>
+        </assignedEntity>
+    </informant>
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root = "2.16.840.1.113883.4.391.1"/>
+                <name>eClinicalWorks</name>
+                <telecom/>
+                <addr/>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <documentationOf>
+        <serviceEvent classCode = "PCPR">
+            <effectiveTime>
+                <low value = "20110223"/>
+                <high value = "20110223"/>
+            </effectiveTime>
+            <performer typeCode = "PRF">
+                <functionCode code = "PCP" codeSystem = "2.16.8401.113883.5.88"/>
+                <assignedEntity>
+                    <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                    <addr/>
+                    <telecom/>
+                    <assignedPerson>
+                        <name>
+                            <given>Sam,Multi</given>
+                            <family>Willis</family>
+                        </name>
+                    </assignedPerson>
+                    <representedOrganization>
+                        <id root = "2.16.840.1.113883.4.391.1.11113"/>
+                        <name> TEST FACILITY TEST EMR3</name>
+                        <telecom/>
+                        <addr/>
+                    </representedOrganization>
+                </assignedEntity>
+            </performer>
+        </serviceEvent>
+    </documentationOf>
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <templateId root = "2.16.840.1.113883.10.20.1.2"/>
+                    <templateId root = "2.16.840.1.113883.3.88.11.83.102"/>
+                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.3.13"/>
+                    <code
+                        code = "48765-2"
+                        codeSystem = "2.16.840.1.113883.6.1"
+                        codeSystemName = "LOINC"
+                        displayName = "Allergies, adverse reactions, alerts"/>
+                    <title>Allergies, Adverse Reactions, Alerts</title>
+                    <text>
+                        <table border = "1" width = "100%">
+                            <thead>
+                                <tr>
+                                    <th>Substance</th>
+                                    <th>Reaction</th>
+                                    <th>Event Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ID = "alert1">A-Hydrocort</td>
+                                    <td>stomach upset</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "alert2">A-Hydrocort</td>
+                                    <td>stomach upset</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "alert3">Coumadin</td>
+                                    <td>rash</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "alert4">Coumadin</td>
+                                    <td>rash</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "alert5">Penicillamine</td>
+                                    <td>anaphylaxis</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "alert6">Penicillamine</td>
+                                    <td>anaphylaxis</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "alert7">Penicillamine</td>
+                                    <td>hives</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "alert8">1st Choice Pen Needles</td>
+                                    <td>hives</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "alert9">1st Choice Pen Needles</td>
+                                    <td>hives</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "alert10">2nd Skin Blister Kit</td>
+                                    <td>shortness of breath</td>
+                                    <td>Non Drug Allergy</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "A-Hydrocort">
+                                                    <originalText>
+                                                        <reference value = "#alert1"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>A-Hydrocort</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "stomach upset"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "A-Hydrocort">
+                                                    <originalText>
+                                                        <reference value = "#alert2"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>A-Hydrocort</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "stomach upset"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "Coumadin">
+                                                    <originalText>
+                                                        <reference value = "#alert3"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>Coumadin</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "rash"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "Coumadin">
+                                                    <originalText>
+                                                        <reference value = "#alert4"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>Coumadin</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "rash"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "Penicillamine">
+                                                    <originalText>
+                                                        <reference value = "#alert5"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>Penicillamine</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "anaphylaxis"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "Penicillamine">
+                                                    <originalText>
+                                                        <reference value = "#alert6"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>Penicillamine</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "anaphylaxis"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "Penicillamine">
+                                                    <originalText>
+                                                        <reference value = "#alert7"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>Penicillamine</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "hives"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "1st Choice Pen Needles">
+                                                    <originalText>
+                                                        <reference value = "#alert8"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>1st Choice Pen Needles</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "hives"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "1st Choice Pen Needles">
+                                                    <originalText>
+                                                        <reference value = "#alert9"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>1st Choice Pen Needles</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "hives"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.6"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low value = "20110128"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.18"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <id extension = "24113.Info Not Available" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "420134006"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "propensity to adverse reactions"/>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low value = "20110128"/>
+                                        <high value = "20110128"/>
+                                    </effectiveTime>
+                                    <value nullFlavor = "NA" xsi:type = "CD"/>
+                                    <participant typeCode = "CSM">
+                                        <participantRole classCode = "MANU">
+                                            <playingEntity classCode = "MMAT">
+                                                <code
+                                                    code = "0"
+                                                    codeSystem = "2.16.840.1.113883.6.96"
+                                                    codeSystemName = "NDC"
+                                                    displayName = "2nd Skin Blister Kit">
+                                                    <originalText>
+                                                        <reference value = "#alert10"/>
+                                                    </originalText>
+                                                </code>
+                                                <name>2nd Skin Blister Kit</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship inversionInd = "true" typeCode = "MFST">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.54"/>
+                                            <code
+                                                code = "ASSERTION"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "NA"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "shortness of breath"
+                                                xsi:type = "CD"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.39"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <templateId root = "2.16.840.1.113883.10.20.1.3"/>
+                    <code
+                        code = "46240-8"
+                        codeSystem = "2.16.840.1.113883.6.1"
+                        codeSystemName = "LOINC"/>
+                    <title>Encounters</title>
+                    <text>
+                        <table border = "1" width = "100%">
+                            <thead>
+                                <tr>
+                                    <th>Encounter</th>
+                                    <th>Location</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td> TEST FACILITY TEST EMR3</td>
+                                    <td>Jan 28, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td> TEST FACILITY TEST EMR3</td>
+                                    <td>Jan 28, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td> TEST FACILITY TEST EMR3</td>
+                                    <td>Jan 31, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td> TEST FACILITY TEST EMR3</td>
+                                    <td>Jan 31, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td> TEST FACILITY TEST EMR3</td>
+                                    <td>Jan 31, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td> TEST FACILITY TEST EMR3</td>
+                                    <td>Feb 16, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td> TEST FACILITY TEST EMR3</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode = "DRIV">
+                        <encounter classCode = "ENC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.21"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "GENRL"
+                                codeSystem = "2.16.840.1.113883.5.4"
+                                displayName = "General">
+                                <originalText></originalText>
+                            </code>
+                            <effectiveTime value = "20110128011500"/>
+                            <participant typeCode = "LOC">
+                                <templateId root = "2.16.840.1.113883.10.20.1.45"/>
+                                <participantRole classCode = "SDLOC">
+                                    <id root = "2.16.840.1.113883.19.5"/>
+                                    <playingEntity classCode = "PLC">
+                                        <name> TEST FACILITY TEST EMR3</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </encounter>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <encounter classCode = "ENC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.21"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "GENRL"
+                                codeSystem = "2.16.840.1.113883.5.4"
+                                displayName = "General">
+                                <originalText></originalText>
+                            </code>
+                            <effectiveTime value = "20110128094500"/>
+                            <participant typeCode = "LOC">
+                                <templateId root = "2.16.840.1.113883.10.20.1.45"/>
+                                <participantRole classCode = "SDLOC">
+                                    <id root = "2.16.840.1.113883.19.5"/>
+                                    <playingEntity classCode = "PLC">
+                                        <name> TEST FACILITY TEST EMR3</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </encounter>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <encounter classCode = "ENC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.21"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "GENRL"
+                                codeSystem = "2.16.840.1.113883.5.4"
+                                displayName = "General">
+                                <originalText></originalText>
+                            </code>
+                            <effectiveTime value = "20110131094500"/>
+                            <participant typeCode = "LOC">
+                                <templateId root = "2.16.840.1.113883.10.20.1.45"/>
+                                <participantRole classCode = "SDLOC">
+                                    <id root = "2.16.840.1.113883.19.5"/>
+                                    <playingEntity classCode = "PLC">
+                                        <name> TEST FACILITY TEST EMR3</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </encounter>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <encounter classCode = "ENC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.21"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "GENRL"
+                                codeSystem = "2.16.840.1.113883.5.4"
+                                displayName = "General">
+                                <originalText></originalText>
+                            </code>
+                            <effectiveTime value = "20110131100000"/>
+                            <participant typeCode = "LOC">
+                                <templateId root = "2.16.840.1.113883.10.20.1.45"/>
+                                <participantRole classCode = "SDLOC">
+                                    <id root = "2.16.840.1.113883.19.5"/>
+                                    <playingEntity classCode = "PLC">
+                                        <name> TEST FACILITY TEST EMR3</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </encounter>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <encounter classCode = "ENC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.21"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "GENRL"
+                                codeSystem = "2.16.840.1.113883.5.4"
+                                displayName = "General">
+                                <originalText></originalText>
+                            </code>
+                            <effectiveTime value = "20110131143000"/>
+                            <participant typeCode = "LOC">
+                                <templateId root = "2.16.840.1.113883.10.20.1.45"/>
+                                <participantRole classCode = "SDLOC">
+                                    <id root = "2.16.840.1.113883.19.5"/>
+                                    <playingEntity classCode = "PLC">
+                                        <name> TEST FACILITY TEST EMR3</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </encounter>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <encounter classCode = "ENC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.21"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "GENRL"
+                                codeSystem = "2.16.840.1.113883.5.4"
+                                displayName = "General">
+                                <originalText></originalText>
+                            </code>
+                            <effectiveTime value = "20110216000000"/>
+                            <participant typeCode = "LOC">
+                                <templateId root = "2.16.840.1.113883.10.20.1.45"/>
+                                <participantRole classCode = "SDLOC">
+                                    <id root = "2.16.840.1.113883.19.5"/>
+                                    <playingEntity classCode = "PLC">
+                                        <name> TEST FACILITY TEST EMR3</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </encounter>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <encounter classCode = "ENC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.21"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "GENRL"
+                                codeSystem = "2.16.840.1.113883.5.4"
+                                displayName = "General">
+                                <originalText></originalText>
+                            </code>
+                            <effectiveTime value = "20110223000000"/>
+                            <participant typeCode = "LOC">
+                                <templateId root = "2.16.840.1.113883.10.20.1.45"/>
+                                <participantRole classCode = "SDLOC">
+                                    <id root = "2.16.840.1.113883.19.5"/>
+                                    <playingEntity classCode = "PLC">
+                                        <name> TEST FACILITY TEST EMR3</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <templateId root = "2.16.840.1.113883.10.20.1.11"/>
+                    <templateId root = "2.16.840.1.113883.3.88.11.83.103"/>
+                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.3.6"/>
+                    <code
+                        code = "11450-4"
+                        codeSystem = "2.16.840.1.113883.6.1"
+                        codeSystemName = "LOINC"
+                        displayName = "Problems"/>
+                    <title>Problems</title>
+                    <text>
+                        <table border = "1" width = "100%">
+                            <thead>
+                                <tr>
+                                    <th>Problem Type</th>
+                                    <th>Condition</th>
+                                    <th>ICD-9 Code</th>
+                                    <th>OnSet Dates</th>
+                                    <th>Condition Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Problem</td>
+                                    <td ID = "prob1">Hypertension</td>
+                                    <td>997.91</td>
+                                    <td></td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>Problem</td>
+                                    <td ID = "prob2">Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled</td>
+                                    <td>250.00</td>
+                                    <td></td>
+                                    <td>Active</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.7"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low nullFlavor = "UNK"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <id extension = "24113.997.91" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "64572001"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "Condition"/>
+                                    <text>
+                                        <reference value = "#prob1"/>
+                                    </text>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low nullFlavor = "UNK"/>
+                                    </effectiveTime>
+                                    <value
+                                        code = "997.91"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "ICD-9 CM"
+                                        displayName = "Hypertension"
+                                        xsi:type = "CD"/>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.50"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <act classCode = "ACT" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.27"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.7"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code nullFlavor = "NA"/>
+                            <statusCode code = "active"/>
+                            <effectiveTime>
+                                <low nullFlavor = "UNK"/>
+                            </effectiveTime>
+                            <entryRelationship inversionInd = "false" typeCode = "SUBJ">
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.28"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                                    <id extension = "24113.250.00" root = "2.16.840.1.113883.4.391.1"/>
+                                    <code
+                                        code = "64572001"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "SNOMED CT"
+                                        displayName = "Condition"/>
+                                    <text>
+                                        <reference value = "#prob2"/>
+                                    </text>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime>
+                                        <low nullFlavor = "UNK"/>
+                                    </effectiveTime>
+                                    <value
+                                        code = "250.00"
+                                        codeSystem = "2.16.840.1.113883.6.96"
+                                        codeSystemName = "ICD-9 CM"
+                                        displayName = "Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled"
+                                        xsi:type = "CD"/>
+                                    <entryRelationship typeCode = "REFR">
+                                        <observation classCode = "OBS" moodCode = "EVN">
+                                            <templateId root = "2.16.840.1.113883.10.20.1.50"/>
+                                            <code
+                                                code = "33999-4"
+                                                codeSystem = "2.16.840.1.113883.6.1"
+                                                codeSystemName = "LOINC"
+                                                displayName = "STATUS"/>
+                                            <statusCode code = "completed"/>
+                                            <value
+                                                code = "55561003"
+                                                codeSystem = "2.16.840.1.113883.6.96"
+                                                codeSystemName = "SNOMED CT"
+                                                displayName = "Active"
+                                                xsi:type = "CE"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <templateId root = "2.16.840.1.113883.10.20.1.8"/>
+                    <templateId root = "2.16.840.1.113883.3.88.11.83.112"/>
+                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.3.19"/>
+                    <code
+                        code = "10160-0"
+                        codeSystem = "2.16.840.1.113883.6.1"
+                        codeSystemName = "LOINC"
+                        displayName = "History of medication use"/>
+                    <title>Medications</title>
+                    <text>
+                        <table border = "1" width = "100%">
+                            <thead>
+                                <tr>
+                                    <th>Medication</th>
+                                    <th>Coding System</th>
+                                    <th>Code</th>
+                                    <th>Instructions</th>
+                                    <th>Start Date</th>
+                                    <th>Status</th>
+                                    <th>Dosage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ID = "med1">Colchicine</td>
+                                    <td>NDC</td>
+                                    <td>0</td>
+                                    <td>0.6 mg orally every 12 hours prn pain</td>
+                                    <td></td>
+                                    <td>Active</td>
+                                    <td ID = "dos1">one tab</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "med2">Advair Diskus</td>
+                                    <td>NDC</td>
+                                    <td>00173-0696-00</td>
+                                    <td>250-50 MCG/DOSE Inhalation every 12 hrs</td>
+                                    <td></td>
+                                    <td>Active</td>
+                                    <td ID = "dos2">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode = "DRIV">
+                        <substanceAdministration classCode = "SBADM" moodCode = "INT">
+                            <templateId root = "2.16.840.1.113883.10.20.1.24"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.8"/>
+                            <id extension = "24113.0" root = "2.16.840.1.113883.4.391.1"/>
+                            <text>
+                                <reference value = "#dos1"/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime xsi:type = "IVL_TS">
+                                <low nullFlavor = "UNK"/>
+                            </effectiveTime>
+                            <routeCode
+                                code = "OTHER"
+                                codeSystem = "2.16.840.1.113883.3.26.1.1"
+                                codeSystemName = "RouteOfAdministration"
+                                displayName = "orally"/>
+                            <consumable>
+                                <manufacturedProduct>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.53"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                                    <templateId root = "2.16.840.1.113883.3.88.11.83.8.2"/>
+                                    <manufacturedMaterial>
+                                        <code
+                                            code = "0"
+                                            codeSystem = "2.16.840.1.113883.6.69"
+                                            codeSystemName = "NDC"
+                                            displayName = "Colchicine">
+                                            <originalText>
+                                                Colchicine
+                                                <reference value = "#med1"/>
+                                            </originalText>
+                                        </code>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                        </substanceAdministration>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <substanceAdministration classCode = "SBADM" moodCode = "INT">
+                            <templateId root = "2.16.840.1.113883.10.20.1.24"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.8"/>
+                            <id extension = "24113.00173-0696-00" root = "2.16.840.1.113883.4.391.1"/>
+                            <text>
+                                <reference value = "#dos2"/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime xsi:type = "IVL_TS">
+                                <low nullFlavor = "UNK"/>
+                            </effectiveTime>
+                            <routeCode
+                                code = "OTHER"
+                                codeSystem = "2.16.840.1.113883.3.26.1.1"
+                                codeSystemName = "RouteOfAdministration"
+                                displayName = "Inhalation"/>
+                            <consumable>
+                                <manufacturedProduct>
+                                    <templateId root = "2.16.840.1.113883.10.20.1.53"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                                    <templateId root = "2.16.840.1.113883.3.88.11.83.8.2"/>
+                                    <manufacturedMaterial>
+                                        <code
+                                            code = "00173-0696-00"
+                                            codeSystem = "2.16.840.1.113883.6.69"
+                                            codeSystemName = "NDC"
+                                            displayName = "Advair Diskus">
+                                            <originalText>
+                                                Advair Diskus
+                                                <reference value = "#med2"/>
+                                            </originalText>
+                                        </code>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <templateId root = "2.16.840.1.113883.10.20.1.15"/>
+                    <templateId root = "2.16.840.1.113883.3.88.11.83.126"/>
+                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.3.16"/>
+                    <code
+                        code = "29762-2"
+                        codeSystem = "2.16.840.1.113883.6.1"
+                        codeSystemName = "LOINC"
+                        displayName = "SOCIAL HISTORY"/>
+                    <title>Social History</title>
+                    <text>
+                        <table border = "1" width = "100%">
+                            <thead>
+                                <tr>
+                                    <th>Social History Element</th>
+                                    <th>Qualifiers</th>
+                                    <th>Date Reported</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ID = "sochist1">Smoking</td>
+                                    <td>.</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "sochist2">Smoking</td>
+                                    <td>.  Are you a: never smoker</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "sochist3">Smoking</td>
+                                    <td>.  Are you a: never smoker</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode = "DRIV">
+                        <observation classCode = "OBS" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.33"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.19"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "Smoking"
+                                codeSystem = "2.16.840.1.113883.6.96"
+                                codeSystemName = "SNOMED CT"
+                                displayName = "Smoking"/>
+                            <text>
+                                <reference value = "#sochist1"/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                            <value xsi:type = "ST">.</value>
+                        </observation>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <observation classCode = "OBS" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.33"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.19"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "Smoking"
+                                codeSystem = "2.16.840.1.113883.6.96"
+                                codeSystemName = "SNOMED CT"
+                                displayName = "Smoking"/>
+                            <text>
+                                <reference value = "#sochist2"/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                            <value xsi:type = "ST">.  Are you a: never smoker</value>
+                        </observation>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <observation classCode = "OBS" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.33"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.19"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "Smoking"
+                                codeSystem = "2.16.840.1.113883.6.96"
+                                codeSystemName = "SNOMED CT"
+                                displayName = "Smoking"/>
+                            <text>
+                                <reference value = "#sochist3"/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                            <value xsi:type = "ST">.  Are you a: never smoker</value>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <templateId root = "2.16.840.1.113883.10.20.1.16"/>
+                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"/>
+                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.3.25"/>
+                    <templateId root = "2.16.840.1.113883.3.88.11.83.119"/>
+                    <code
+                        code = "8716-3"
+                        codeSystem = "2.16.840.1.113883.6.1"
+                        codeSystemName = "LOINC"
+                        displayName = "VITAL SIGNS"/>
+                    <title>Vital Signs</title>
+                    <text>
+                        <table border = "1" width = "100%">
+                            <thead>
+                                <tr>
+                                    <th>Date/Time:</th>
+                                    <th>Feb 23, 2011</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th ID = "vital0">Temperature</th>
+                                    <td>98.8 F</td>
+                                </tr>
+                                <tr>
+                                    <th ID = "vital4">Cardiac Monitoring Heart Rate</th>
+                                    <td>90 Beats per Minute</td>
+                                </tr>
+                                <tr>
+                                    <th ID = "vital8">Height</th>
+                                    <td>178 inches</td>
+                                </tr>
+                                <tr>
+                                    <th ID = "vital12">Weight</th>
+                                    <td>189 lbs</td>
+                                </tr>
+                                <tr>
+                                    <th ID = "vital16">BMI</th>
+                                    <td>4.19 Index</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode = "DRIV">
+                        <organizer classCode = "CLUSTER" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.35"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+                            <templateId root = "2.16.840.1.113883.10.20.1.32"/>
+                            <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                            <code
+                                code = "46680005"
+                                codeSystem = "2.16.840.1.113883.6.96"
+                                codeSystemName = "SNOMED CT"
+                                displayName = "Vital signs"/>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                            <component>
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root = "2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                                    <code
+                                        code = "8310-5"
+                                        codeSystem = "2.16.840.1.113883.6.1"
+                                        codeSystemName = "LOINC"
+                                        displayName = "Temperature"/>
+                                    <text>
+                                        <reference value = "#vital0"/>
+                                    </text>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime value = "20110223"/>
+                                    <value
+                                        unit = "[degF]"
+                                        value = "98.8"
+                                        xsi:type = "PQ"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root = "2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                                    <code
+                                        code = "8867-4"
+                                        codeSystem = "2.16.840.1.113883.6.1"
+                                        codeSystemName = "LOINC"
+                                        displayName = "Cardiac Monitoring Heart Rate"/>
+                                    <text>
+                                        <reference value = "#vital4"/>
+                                    </text>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime value = "20110223"/>
+                                    <value
+                                        unit = "/min"
+                                        value = "90"
+                                        xsi:type = "PQ"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root = "2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                                    <code
+                                        code = "8302-2"
+                                        codeSystem = "2.16.840.1.113883.6.1"
+                                        codeSystemName = "LOINC"
+                                        displayName = "Height"/>
+                                    <text>
+                                        <reference value = "#vital8"/>
+                                    </text>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime value = "20110223"/>
+                                    <value
+                                        unit = "[in_us]"
+                                        value = "178"
+                                        xsi:type = "PQ"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode = "OBS" moodCode = "EVN">
+                                    <templateId root = "2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root = "2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root = "36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+                                    <code
+                                        code = "3141-9"
+                                        codeSystem = "2.16.840.1.113883.6.1"
+                                        codeSystemName = "LOINC"
+                                        displayName = "Weight"/>
+                                    <text>
+                                        <reference value = "#vital12"/>
+                                    </text>
+                                    <statusCode code = "completed"/>
+                                    <effectiveTime value = "20110223"/>
+                                    <value
+                                        unit = "[lb_av]"
+                                        value = "189"
+                                        xsi:type = "PQ"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <templateId root = "2.16.840.1.113883.10.20.1.12"/>
+                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
+                    <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.3.12"/>
+                    <code
+                        code = "47519-4"
+                        codeSystem = "2.16.840.1.113883.6.1"
+                        codeSystemName = "LOINC"
+                        displayName = "PROCEDURES"/>
+                    <title>Procedures</title>
+                    <text>
+                        <table border = "1" width = "100%">
+                            <thead>
+                                <tr>
+                                    <th>Procedure</th>
+                                    <th>Coding System</th>
+                                    <th>Code</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ID = "proc1">FLU VACCINE NO PRESERV 3 &amp; &gt;</td>
+                                    <td>CPT-4</td>
+                                    <td>90656</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "proc2">FLU VACCINE NO PRESERV 3 &amp; &gt;</td>
+                                    <td>CPT-4</td>
+                                    <td>90656</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "proc3">FLU VACCINE NO PRESERV 3 &amp; &gt;</td>
+                                    <td>CPT-4</td>
+                                    <td>90656</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "proc4">1 VISN +/-4.25-+/-7.00 0.12-2.00D</td>
+                                    <td>CPT-4</td>
+                                    <td>V2107</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "proc5">1 VISN +/-4.25-+/-7.00 0.12-2.00D</td>
+                                    <td>CPT-4</td>
+                                    <td>V2107</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "proc6">1 VISN +/-4.25-+/-7.00 0.12-2.00D</td>
+                                    <td>CPT-4</td>
+                                    <td>V2107</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "proc7">DTap</td>
+                                    <td>CPT-4</td>
+                                    <td>90700</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                                <tr>
+                                    <td ID = "proc8">DTap</td>
+                                    <td>CPT-4</td>
+                                    <td>90700</td>
+                                    <td>Feb 23, 2011</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode = "DRIV">
+                        <procedure classCode = "PROC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.29"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.17"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                            <id extension = "24113.90656" root = "2.16.840.1.113883.4.391.1"/>
+                            <code
+                                code = "90656"
+                                codeSystem = "2.16.840.1.113883.6.12"
+                                codeSystemName = "CPT-4"
+                                displayName = "FLU VACCINE NO PRESERV 3 &amp; &gt;">
+                                <originalText>
+                                    <reference value = "#proc1"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <reference/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                        </procedure>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <procedure classCode = "PROC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.29"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.17"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                            <id extension = "24113.90656" root = "2.16.840.1.113883.4.391.1"/>
+                            <code
+                                code = "90656"
+                                codeSystem = "2.16.840.1.113883.6.12"
+                                codeSystemName = "CPT-4"
+                                displayName = "FLU VACCINE NO PRESERV 3 &amp; &gt;">
+                                <originalText>
+                                    <reference value = "#proc2"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <reference/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                        </procedure>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <procedure classCode = "PROC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.29"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.17"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                            <id extension = "24113.90656" root = "2.16.840.1.113883.4.391.1"/>
+                            <code
+                                code = "90656"
+                                codeSystem = "2.16.840.1.113883.6.12"
+                                codeSystemName = "CPT-4"
+                                displayName = "FLU VACCINE NO PRESERV 3 &amp; &gt;">
+                                <originalText>
+                                    <reference value = "#proc3"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <reference/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                        </procedure>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <procedure classCode = "PROC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.29"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.17"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                            <id extension = "24113.V2107" root = "2.16.840.1.113883.4.391.1"/>
+                            <code
+                                code = "V2107"
+                                codeSystem = "2.16.840.1.113883.6.12"
+                                codeSystemName = "CPT-4"
+                                displayName = "1 VISN +/-4.25-+/-7.00 0.12-2.00D">
+                                <originalText>
+                                    <reference value = "#proc4"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <reference/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                        </procedure>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <procedure classCode = "PROC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.29"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.17"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                            <id extension = "24113.V2107" root = "2.16.840.1.113883.4.391.1"/>
+                            <code
+                                code = "V2107"
+                                codeSystem = "2.16.840.1.113883.6.12"
+                                codeSystemName = "CPT-4"
+                                displayName = "1 VISN +/-4.25-+/-7.00 0.12-2.00D">
+                                <originalText>
+                                    <reference value = "#proc5"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <reference/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                        </procedure>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <procedure classCode = "PROC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.29"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.17"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                            <id extension = "24113.V2107" root = "2.16.840.1.113883.4.391.1"/>
+                            <code
+                                code = "V2107"
+                                codeSystem = "2.16.840.1.113883.6.12"
+                                codeSystemName = "CPT-4"
+                                displayName = "1 VISN +/-4.25-+/-7.00 0.12-2.00D">
+                                <originalText>
+                                    <reference value = "#proc6"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <reference/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                        </procedure>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <procedure classCode = "PROC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.29"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.17"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                            <id extension = "24113.90700" root = "2.16.840.1.113883.4.391.1"/>
+                            <code
+                                code = "90700"
+                                codeSystem = "2.16.840.1.113883.6.12"
+                                codeSystemName = "CPT-4"
+                                displayName = "DTap">
+                                <originalText>
+                                    <reference value = "#proc7"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <reference/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                        </procedure>
+                    </entry>
+                    <entry typeCode = "DRIV">
+                        <procedure classCode = "PROC" moodCode = "EVN">
+                            <templateId root = "2.16.840.1.113883.10.20.1.29"/>
+                            <templateId root = "2.16.840.1.113883.3.88.11.83.17"/>
+                            <templateId root = "1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                            <id extension = "24113.90700" root = "2.16.840.1.113883.4.391.1"/>
+                            <code
+                                code = "90700"
+                                codeSystem = "2.16.840.1.113883.6.12"
+                                codeSystemName = "CPT-4"
+                                displayName = "DTap">
+                                <originalText>
+                                    <reference value = "#proc8"/>
+                                </originalText>
+                            </code>
+                            <text>
+                                <reference/>
+                            </text>
+                            <statusCode code = "completed"/>
+                            <effectiveTime value = "20110223"/>
+                        </procedure>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

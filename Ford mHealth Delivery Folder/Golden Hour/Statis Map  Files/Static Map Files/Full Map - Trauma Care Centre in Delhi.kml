@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>Untitled map</name>
+		<description><![CDATA[]]></description>
+		<Folder>
+			<name>Untitled layer</name>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>AIIMS Campus, Ansari Nagar East</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.2110558,28.5675623,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Apollo Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.2242726,28.6363616,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Batra Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.245903,28.5133493,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Deen DayalUpadhyay Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.1123505,28.6280759,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Dr.Hedgewar Arogya Sansthan</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.2936249,28.6554953,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Dr. RamManohar Lohia Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.1998978,28.6249117,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>FortisHospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.170372,28.7094092,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>GovindBallabh Pant Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.2350883,28.638924,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>GTBHospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.3090744,28.6838111,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Guru GobindSingh Government Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.1072006,28.6532357,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Lal BahadurShastri Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.3114777,28.6179802,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Lok NayakJai Prakash Narayan Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.2385216,28.638472,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Max Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.1502876,28.6908888,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>SanjayGandhi Memorial Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.0805931,28.6940511,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>SardarVallabh Bhai Patel Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.1691704,28.6469087,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Sir GangaRam Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.1894264,28.6386227,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-503-DB4436</styleUrl>
+				<name>Moolchand Hospital</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>77.235775,28.5662808,0.0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Style id='icon-503-DB4436'>
+			<IconStyle>
+				<color>ff3644DB</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+	</Document>
+</kml>

@@ -1,0 +1,106 @@
+{"name":"ignition_status","value":"off"}
+{"name": "vehicle_speed", "value": 0}
+{"name":"brake_pedal_status","value":false}
+{"name":"engine_speed","value":0}
+{"name":"parking_brake_status","value":false}
+{"name":"accelerator_pedal_position","value":0.000000}
+{"name":"ignition_status","value":"run"}
+{"name":"engine_speed","value":676.000000}
+{"name":"vehicle_speed","value":6.000000}
+{"name":"engine_speed","value":676.000000}
+{"name":"accelerator_pedal_position","value":12.000000}
+{"name":"engine_speed","value":700.000000}
+{"name":"vehicle_speed","value":20.000000}
+{"name":"accelerator_pedal_position","value":30.000000}
+{"name":"engine_speed","value":800.000000}
+{"name":"vehicle_speed","value":35.000000}
+{"name":"accelerator_pedal_position","value":34.000000}
+{"name":"engine_speed","value":890.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"accelerator_pedal_position","value":30.000000}
+{"name":"engine_speed","value":800.000000}
+{"name":"vehicle_speed","value":35.000000}
+{"name":"accelerator_pedal_position","value":20.000000}
+{"name":"engine_speed","value":700.000000}
+{"name":"vehicle_speed","value":20.000000}
+{"name":"accelerator_pedal_position","value":10.000000}
+{"name":"engine_speed","value":690.000000}
+{"name":"vehicle_speed","value":10.000000}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name": "vehicle_speed", "value": 8}
+{"name":"engine_speed","value":674.000000}
+{"name":"engine_speed","value":674.000000}
+{"name":"engine_speed","value":674.000000}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 5}
+{"name": "vehicle_speed", "value": 5}
+{"name": "vehicle_speed", "value": 5}
+{"name": "vehicle_speed", "value": 5}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 9}
+{"name": "vehicle_speed", "value": 5}
+{"name": "vehicle_speed", "value": 5}
+{"name": "vehicle_speed", "value": 5}
+{"name": "vehicle_speed", "value": 5}
+{"name":"accelerator_pedal_position","value":34.000000}
+{"name":"engine_speed","value":890.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"accelerator_pedal_position","value":50.000000}
+{"name":"engine_speed","value":1020.000000}
+{"name":"vehicle_speed","value":80.000000}
+{"name":"vehicle_speed","value":80.000000}
+{"name":"vehicle_speed","value":80.000000}
+{"name":"vehicle_speed","value":80.000000}
+{"name":"vehicle_speed","value":80.000000}
+{"name":"vehicle_speed","value":80.000000}
+{"name":"accelerator_pedal_position","value":34.000000}
+{"name":"engine_speed","value":890.000000}
+{"name":"vehicle_speed","value":60.000000}
+{"name":"accelerator_pedal_position","value":30.000000}
+{"name":"engine_speed","value":800.000000}
+{"name":"vehicle_speed","value":35.000000}
+{"name":"accelerator_pedal_position","value":30.000000}
+{"name":"engine_speed","value":800.000000}
+{"name":"vehicle_speed","value":15.000000}
+{"name":"engine_speed","value":700.000000}
+{"name":"vehicle_speed","value":6.000000}
+{"name":"vehicle_speed","value":6.000000}
+{"name":"accelerator_pedal_position","value":0.000000}
+{"name":"ignition_status","value":"off"}
+{"name": "vehicle_speed", "value": 0}
+{"name":"brake_pedal_status","value":true}
+{"name":"engine_speed","value":0}
+{"name":"parking_brake_status","value":false}

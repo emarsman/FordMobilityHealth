@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <TableLayout
+        android:id="@+id/deviceLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dip"
+        android:paddingRight="50dip" 
+        android:background="@drawable/motor">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:paddingBottom="20dip" >
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/play_dashboard"
+                android:textSize="30sp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/trauma_centre_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ambulance"
+                    android:textSize="30sp" 
+                    android:visibility="invisible"/>
+                <Button
+                    android:id="@+id/health_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/health_detail"
+                    android:textSize="30sp" 
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:text="Dashboard"
+            android:textColor="@color/RowTextColor"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/r1c1"
+                android:layout_width="600dip"
+                android:padding="3dip"
+                android:text="Vehicle Speed (kph)"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/vehicle_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/r2c1"
+                android:padding="3dip"
+                android:text="Engine Speed (rpm)"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/engine_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/r4c1"
+                android:padding="3dip"
+                android:text="Ignition Status"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/ignition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/r5c1"
+                android:padding="3dip"
+                android:text="Parking Brake"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/parking_brake_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/r5c1"
+                android:padding="3dip"
+                android:text="Brake Pedal Status"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/brake_pedal_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/r6c1"
+                android:padding="3dip"
+                android:text="Accelerator Pedal Position"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/accelerator_pedal_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/r6c1"
+                android:padding="3dip"
+                android:text="Accelerator Pedal Position"
+                android:textColor="@color/RowTextColor"
+                android:textSize="40sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/crash_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Crashed."
+                android:textColor="#ff00ff00"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

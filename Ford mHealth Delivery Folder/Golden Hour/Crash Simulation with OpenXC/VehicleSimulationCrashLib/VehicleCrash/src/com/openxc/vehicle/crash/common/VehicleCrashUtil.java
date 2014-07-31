@@ -18,16 +18,20 @@ import com.openxc.sources.trace.TraceVehicleDataSource;
 import com.openxc.vehicle.crash.R;
 
 public class VehicleCrashUtil {
+	
 	private final String TAG = AppLog.getClassName();
 	private static VehicleCrashUtil mVehicleCrashUtil = null;
 	private OnVehicleCrashedListener mOnVehicleCrashedListener = null;
-	private double mPreviousVehicleSpeed = 0;
-	private double mPreviousEngineSpeed = 0;
+	public static double  mPreviousVehicleSpeed = 0;
+	public static double mPreviousEngineSpeed = 0;
 	private String mSourceFile = null;
 	private TraceVehicleDataSource mSource = null;
-	private String provider = "";
 	private Context mContext = null;
-
+	private boolean VehicleCrashProbable=false;
+	private boolean VehicleCrashed=false;
+	public static double VehicleSpeed=0;
+	public static double EngineSpeed=0;
+	
 	private VehicleCrashUtil() {
 	}
 
@@ -110,80 +114,76 @@ public class VehicleCrashUtil {
 		this.mSource = source;
 	}
 
-	public boolean checkVehicleCrash(double speed) {
+	public boolean checkVehicleCrash(double EngineSpeed, double VehicleSpeed) {
 		AppLog.enter(TAG, AppLog.getMethodName());
 
-		boolean mCrashStatus = false;
-		if (mPreviousEngineSpeed > 1000 && speed <= 0.0
-				|| mPreviousVehicleSpeed > 60 && speed <= 0.0) {
-
+			
+		// check what speed we received
+		if (EngineSpeed >= 0)
+		{
+			// engine speed is received
+			if (mPreviousEngineSpeed > 1200 && EngineSpeed == 0.0) 
+			{
+				if (VehicleCrashProbable)
+				{
+					this.EngineSpeed=EngineSpeed;
+					VehicleCrashed = true;
+				}
+				else
+				{
+					VehicleCrashProbable = true;
+				}
+			}
+			
+			if (EngineSpeed > 0)
+			{
+				VehicleCrashed = false;
+				VehicleCrashProbable = false;
+			}
+		}
+			
+		if (VehicleSpeed >= 0)
+		{
+			// vehicle speed is received
+			if (mPreviousVehicleSpeed > 40 && VehicleSpeed == 0.0) 
+			{
+				if (VehicleCrashProbable)
+				{
+					this.VehicleSpeed=VehicleSpeed;
+					VehicleCrashed = true;
+				}
+				else
+				{
+					VehicleCrashProbable = true;
+				}
+			}
+			
+			if (VehicleSpeed > 0)
+			{
+				VehicleCrashed = false;
+				VehicleCrashProbable = false;
+			}
+		}	
+			
+			
+			
+		// notify if vehicle crashed
+		if (VehicleCrashed) {
+			
 			AppLog.info(TAG, "Car Crashed !!!");
+			AppLog.info("mPreviousEngineSpeed" +mPreviousEngineSpeed,"mPreviousVehicleSpeed "+mPreviousEngineSpeed);
 
-			mCrashStatus = true;
+			// notify to subscriber app
 			if (null != mOnVehicleCrashedListener) {
 				mOnVehicleCrashedListener.onVehicleCrashed();
+				
 			}
 		}
 
 		AppLog.exit(TAG, AppLog.getMethodName());
-		return mCrashStatus;
+		
+		return VehicleCrashed;
 	}
 
-	public String fetchLocation(Context ctx) {
-		LocationManager locationManager = (LocationManager) ctx
-				.getSystemService(Context.LOCATION_SERVICE);
-		Criteria criteria = new Criteria();
-
-		String address = "";
-
-		// get the provider.
-		for (int _i = 0; _i < 10; _i++) {
-			provider = locationManager.getBestProvider(criteria, false);
-
-			if (provider != "")
-				break;
-
-			try {
-				Thread.sleep(100);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-
-		}
-
-		// return a blank string if provider is not found.
-		if (provider == "") {
-			Log.i("LOC", "Provider not found.");
-			return address;
-		}
-
-		Location location = locationManager.getLastKnownLocation(provider);
-
-		Log.i("LOC", "Last Known Location is : " + location);
-
-		if (location != null) {
-			Geocoder geoCoder = new Geocoder(ctx, Locale.getDefault());
-			try {
-				List<Address> addresses = geoCoder.getFromLocation(
-						location.getLatitude(), location.getLongitude(), 1);
-
-				if (addresses.size() > 0) {
-					for (int i = 0; i < addresses.get(0)
-							.getMaxAddressLineIndex(); i++)
-						address += addresses.get(0).getAddressLine(i) + "\n";
-				}
-
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			Log.i("LOC", "Last Known Location address is : " + address);
-			return address;
-
-		} else {
-			Log.i("LOC", "Last Known Location address is : " + address);
-			return address;
-		}
-
-	}
 
 }

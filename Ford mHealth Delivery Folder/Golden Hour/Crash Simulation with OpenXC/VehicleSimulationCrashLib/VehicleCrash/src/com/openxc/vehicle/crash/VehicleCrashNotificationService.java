@@ -102,6 +102,7 @@ public class VehicleCrashNotificationService extends Service {
 		AppLog.enter(TAG, AppLog.getMethodName());
 
 		mSpeedListener = new VehicleSpeed.Listener() {
+			
 			private String TAG = AppLog.getClassName();
 
 			public void receive(Measurement measurement) {
@@ -116,9 +117,10 @@ public class VehicleCrashNotificationService extends Service {
 				mHandler.post(new Runnable() {
 					public void run() {
 						double vehicleSpeed = speed.getValue().doubleValue();
+						double engineSpeed = -1.0;
 						AppLog.info(TAG, "Vehicle Speed is : " + vehicleSpeed);
 						if (VehicleCrashUtil.getInstance().checkVehicleCrash(
-								vehicleSpeed)) {
+								engineSpeed, vehicleSpeed)) {
 							mCrashDetected = true;
 						} else {
 							VehicleCrashUtil.getInstance()
@@ -146,9 +148,11 @@ public class VehicleCrashNotificationService extends Service {
 				mHandler.post(new Runnable() {
 					public void run() {
 						double engineSpeed = speed.getValue().doubleValue();
+						double vehicleSpeed = -1.0;
+						
 						AppLog.info(TAG, "Engine Speed is : " + engineSpeed);
 						if (VehicleCrashUtil.getInstance().checkVehicleCrash(
-								engineSpeed)) {
+								engineSpeed, vehicleSpeed)) {
 							mCrashDetected = true;
 						} else {
 							VehicleCrashUtil.getInstance()

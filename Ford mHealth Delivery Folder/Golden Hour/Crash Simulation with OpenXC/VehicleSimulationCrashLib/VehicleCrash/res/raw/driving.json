@@ -95,7 +95,7 @@
 {"timestamp": 1351181595.126203, "name": "powertrain_torque", "value": 11.0}
 {"timestamp": 1351181595.1312032, "name": "accelerator_pedal_position", "value": 0.0}
 {"timestamp": 1351181595.1362033, "name": "engine_speed", "value": 1230.0}
-{"timestamp": 1351181595.1412034, "name": "vehicle_speed", "value": 10.0}
+{"timestamp": 1351181595.1412034, "name": "vehicle_speed", "value": 0.0}
 {"timestamp": 1351181595.1462035, "name": "fine_odometer_since_restart", "value": 0.366266}
 {"timestamp": 1351181595.1512036, "name": "parking_brake_status", "value": false}
 {"timestamp": 1351181595.1562037, "name": "headlamp_status", "value": false}
@@ -147,7 +147,7 @@
 {"timestamp": 1351181595.386209, "name": "steering_wheel_angle", "value": 103.458298}
 {"timestamp": 1351181595.3912091, "name": "powertrain_torque", "value": 6.0}
 {"timestamp": 1351181595.3962092, "name": "accelerator_pedal_position", "value": 0.0}
-{"timestamp": 1351181595.4012094, "name": "engine_speed", "value": 0.0}
+{"timestamp": 1351181595.4012094, "name": "engine_speed", "value": 1056.0}
 {"timestamp": 1351181595.4062095, "name": "vehicle_speed", "value": 4.89}
 {"timestamp": 1351181595.4112096, "name": "brake_pedal_status", "value": true}
 {"timestamp": 1351181595.4162097, "name": "transmission_gear_position", "value": "first"}
@@ -169,7 +169,7 @@
 {"timestamp": 1351181595.4962115, "name": "powertrain_torque", "value": 6.0}
 {"timestamp": 1351181595.5012116, "name": "accelerator_pedal_position", "value": 0.0}
 {"timestamp": 1351181595.5062118, "name": "engine_speed", "value": 1018.0}
-{"timestamp": 1351181595.5112119, "name": "vehicle_speed", "value": 84.85}
+{"timestamp": 1351181595.5112119, "name": "vehicle_speed", "value": 4.85}
 {"timestamp": 1351181595.516212, "name": "parking_brake_status", "value": false}
 {"timestamp": 1351181595.521212, "name": "headlamp_status", "value": false}
 {"timestamp": 1351181595.5262122, "name": "ignition_status", "value": "run"}
@@ -178,7 +178,7 @@
 {"timestamp": 1351181595.5412126, "name": "powertrain_torque", "value": 6.0}
 {"timestamp": 1351181595.5462127, "name": "accelerator_pedal_position", "value": 0.0}
 {"timestamp": 1351181595.5512128, "name": "engine_speed", "value": 994.0}
-{"timestamp": 1351181595.556213, "name": "vehicle_speed", "value": 0.0}
+{"timestamp": 1351181595.556213, "name": "vehicle_speed", "value": 4.89}
 {"timestamp": 1351181595.561213, "name": "brake_pedal_status", "value": false}
 {"timestamp": 1351181595.5662131, "name": "fine_odometer_since_restart", "value": 0.367702}
 {"timestamp": 1351181595.5712132, "name": "engine_speed", "value": 992.0}

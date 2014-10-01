@@ -4,13 +4,14 @@ import org.motechproject.mHealthDataInterface.bean.Provider;
 import org.motechproject.mHealthDataInterface.service.HealthWorkerService;
 import org.motechproject.mHealthDataInterface.utility.Utility;
 import org.motechproject.mHealthDataInterface.utility.mHealthException;
+import java.util.List;
 
 
 public class HealthWorkerServiceImpl implements HealthWorkerService {
 
 	/**
 	 *
-	 * verify healthworker details
+	 * verify health worker details
 	 *
 	 */
 	@Override
@@ -26,7 +27,7 @@ public class HealthWorkerServiceImpl implements HealthWorkerService {
 
 	/**
 	 *
-	 * get healthworker details
+	 * get health worker details
 	 *
 	 */
 	@Override
@@ -38,6 +39,19 @@ public class HealthWorkerServiceImpl implements HealthWorkerService {
 		return healthWorker;
 	}
 
+    /**
+     *
+     * get health workers details by name
+     *
+     */
+    @Override
+    public List<Provider> getHealthWorkersDetailByName(String healthWorkerName) throws mHealthException {
+
+        Utility utility = new Utility();
+        List<Provider> healthWorker = utility.getHealthWorkersDetailByName(healthWorkerName);
+
+        return healthWorker;
+    }
 	
 	
 

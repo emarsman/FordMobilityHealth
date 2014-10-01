@@ -2,11 +2,10 @@ package org.motechproject.mHealthDataInterface.service;
 
 
 import java.util.List;
-import org.motechproject.mHealthDataInterface.bean.Location;
-import org.motechproject.mHealthDataInterface.bean.Patient;
-import org.motechproject.mHealthDataInterface.bean.Encounter;
-import org.motechproject.mHealthDataInterface.bean.PatientLocation;
+
+import org.motechproject.mHealthDataInterface.bean.*;
 import org.motechproject.mHealthDataInterface.utility.mHealthException;
+import org.motechproject.mHealthDataInterface.bean.Person.PreferredAddress;
 
 public interface PatientService {
 
@@ -19,10 +18,17 @@ public interface PatientService {
 
     /**
      *
+     * get mothers detail by Name
+     *
+     */
+    List<Patient> getMothersDetailByName(String motherName) throws mHealthException;
+
+    /**
+     *
      * get mother's village details
      *
      */
-     Location getMotherVillage(String motherId) throws mHealthException;
+    PreferredAddress getMotherVillage(String motherId) throws mHealthException;
 
     /**
      *
@@ -37,5 +43,12 @@ public interface PatientService {
      *
      */
      List<PatientLocation> getMothersByVillage(String village) throws mHealthException;
+
+    /**
+     *
+     * get mothers living in particular postal code area
+     *
+     */
+    List<PatientLocation> getMothersByPostalCode(String postalCode) throws mHealthException;
 
 }

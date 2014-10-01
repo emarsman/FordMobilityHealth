@@ -18,12 +18,21 @@ import org.motechproject.mHealthDataInterface.bean.Observation.ObservationValue;
 import org.motechproject.mHealthDataInterface.bean.Observation.ObservationValueDeserializer;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.motechproject.mHealthDataInterface.bean.PatientLocation;
+import org.motechproject.mHealthDataInterface.bean.Person;
+import org.motechproject.mHealthDataInterface.bean.Person.PreferredAddress;
 import org.motechproject.mHealthDataInterface.utility.mHealthException;
 
 /**
  * Custom class behaving as DAO
  */
 public class Utility {
+
+    /**
+     * get spring data source connection
+     *
+     *
+     */
+    JdbcTemplate jdbcTemplate = getDatabaseConnection();
 
    /**
 	 * get patient details
@@ -43,41 +52,54 @@ public class Utility {
 
         return patient;
 		}
-	
-	
-	/**
+
+
+    /**
+     * get patients detail by name
+     *
+     *
+     */
+    public List<Patient> getPatientsDetailByName( String patientName) throws mHealthException {
+        String path = "/patient?q=" + patientName + "&v=full";
+        List<Patient> patient = null;
+
+        String json = GenericUtility.getJsonObject(path);
+        Gson gson = GenericUtility.gsonDateFormat();
+
+        Map<Type, Object> adapters = new HashMap<Type, Object>();
+        PatientListResult result = (PatientListResult) JsonUtils.readJsonWithAdapters(json,
+                PatientListResult.class, adapters);
+
+        return result.getResults();
+    }
+
+
+    /**
 	 * 
 	 * get patient village
 	 *
 	 */
 	 
-	public Location getPatientVillage( String patientId) throws mHealthException {
-		String path = "/patient/" + patientId + "?v=full";
-        Patient patient = null;
-        Location location = null;
-        String locationUid = null;
+	public PreferredAddress getPatientVillage( String patientId) throws mHealthException {
+		String path = "/person/" + patientId + "?v=full";
+        PreferredAddress address = null;
+        Person person = null;
+      //  String locationUid = null;
 
     	String json = GenericUtility.getJsonObject(path);
        	Gson gson = GenericUtility.gsonDateFormat();
 
         if (gson != null && json != null) {
-            patient = gson.fromJson(json, Patient.class);
+            person = gson.fromJson(json, Person.class);
         }
 
-        if (patient != null) {
-            if (patient.getIdentifiers() != null && patient.getIdentifiers().size() > 0) {
-                locationUid = patient.getIdentifiers().get(0).getLocation().getUuid();
+        if (person != null) {
+            if (person.getPreferredAddress() != null) {
+                address = person.getPreferredAddress();
             }
         }
 
-        String locPath = "/location/" + locationUid;
-        String locJson = GenericUtility.getJsonObject(locPath);
-
-        if (gson != null && locJson != null) {
-            location = gson.fromJson(locJson, Location.class);
-        }
-
-        return location;
+        return address;
 	}
 	
 	/**
@@ -146,6 +168,25 @@ public class Utility {
 
     /**
      *
+     * get health Workers detail by name
+     *
+     */
+    public List<Provider> getHealthWorkersDetailByName( String healthWorkerName) throws mHealthException {
+        String path = "/provider?q=" + healthWorkerName + "&v=full";
+        List<Provider> healthWorker = null;
+
+        String json = GenericUtility.getJsonObject(path);
+        Gson gson = GenericUtility.gsonDateFormat();
+
+        Map<Type, Object> adapters = new HashMap<Type, Object>();
+        ProviderListResult result = (ProviderListResult) JsonUtils.readJsonWithAdapters(json,
+                ProviderListResult.class, adapters);
+
+        return result.getResults();
+    }
+
+    /**
+     *
      * get mother details in a particular village
      *
      */
@@ -153,9 +194,24 @@ public class Utility {
 
         List<PatientLocation> patientLocationsList = new ArrayList<PatientLocation>();
 
-        JdbcTemplate jdbcTemplate = getDatabaseConnection();
+        String query = Constants.query_village +villageName + "%'";
+        return getPatientLocations(patientLocationsList, query);
+    }
 
-        String query = Constants.query +villageName + "'";
+    /**
+     *
+     * get mother details in a particular postal code
+     *
+     */
+    public List<PatientLocation> getPatientsByPostalCode( String postalCode) throws mHealthException {
+
+        List<PatientLocation> patientLocationsList = new ArrayList<PatientLocation>();
+
+        String query = Constants.query_postalCode +postalCode + "'";
+        return getPatientLocations(patientLocationsList, query);
+    }
+
+    private List<PatientLocation> getPatientLocations(List<PatientLocation> patientLocationsList, String query) {
         List<Map<String, Object>> patientList = jdbcTemplate.queryForList(query);
 
         if (patientList != null && !patientList.isEmpty()) {
@@ -166,7 +222,7 @@ public class Utility {
                     String key = entry.getKey();
                     Object value = entry.getValue();
 
-                    if (key.equalsIgnoreCase("patient_id")) {
+                    if (key.equalsIgnoreCase("uuid")) {
                         if (value != null) {
                             patientLocation.setuUid(value.toString());
                         }
@@ -174,6 +230,11 @@ public class Utility {
                     if (key.equalsIgnoreCase("name")) {
                         if (value != null) {
                             patientLocation.setName(value.toString());
+                        }
+                    }
+                    if (key.equalsIgnoreCase("village")) {
+                        if (value != null) {
+                            patientLocation.setVillage(value.toString());
                         }
                     }
                     if (key.equalsIgnoreCase("address1")) {
@@ -184,6 +245,21 @@ public class Utility {
                     if (key.equalsIgnoreCase("address2")) {
                         if (value != null) {
                             patientLocation.setAddress2(value.toString());
+                        }
+                    }
+                    if (key.equalsIgnoreCase("state_province")) {
+                        if (value != null) {
+                            patientLocation.setState(value.toString());
+                        }
+                    }
+                    if (key.equalsIgnoreCase("postal_code")) {
+                        if (value != null) {
+                            patientLocation.setPostalCode(value.toString());
+                        }
+                    }
+                    if (key.equalsIgnoreCase("country")) {
+                        if (value != null) {
+                            patientLocation.setCountry(value.toString());
                         }
                     }
                     if (key.equalsIgnoreCase("phone")) {

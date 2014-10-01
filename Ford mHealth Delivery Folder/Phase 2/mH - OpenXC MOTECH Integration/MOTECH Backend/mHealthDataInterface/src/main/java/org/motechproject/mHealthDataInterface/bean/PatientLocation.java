@@ -1,16 +1,53 @@
 package org.motechproject.mHealthDataInterface.bean;
 
 /**
- * Custom class for mothers locations
+ * Custom class for mothers location
  */
 
 public class PatientLocation {
 
     private String uUid;
     private String name;
+    private String village;
     private String address1;
     private String address2;
+    private String state;
+    private String postalCode;
+    private String country;
     private String phone;
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+
+    public String getVillage() {
+        return village;
+    }
+
+    public void setVillage(String village) {
+        this.village = village;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
 
     public String getAddress1() {
         return address1;

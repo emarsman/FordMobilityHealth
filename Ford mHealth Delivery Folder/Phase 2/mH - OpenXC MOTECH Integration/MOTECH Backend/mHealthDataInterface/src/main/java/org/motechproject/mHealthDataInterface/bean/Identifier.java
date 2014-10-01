@@ -9,7 +9,7 @@ public class Identifier {
     private String uuid;
     private String identifier;
     private IdentifierType identifierType;
-    private Location location;
+    private transient Location location;
 
     public String getUuid() {
         return uuid;

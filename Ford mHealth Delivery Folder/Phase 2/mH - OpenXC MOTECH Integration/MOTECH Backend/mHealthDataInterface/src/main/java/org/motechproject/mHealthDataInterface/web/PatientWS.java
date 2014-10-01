@@ -8,6 +8,8 @@ import org.motechproject.mHealthDataInterface.bean.PatientLocation;
 import org.motechproject.mHealthDataInterface.service.PatientService;
 import com.google.gson.Gson;
 import org.motechproject.mHealthDataInterface.util.Constants;
+import org.motechproject.mHealthDataInterface.utility.mHealthException;
+import org.motechproject.mHealthDataInterface.bean.Person.PreferredAddress;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -53,7 +55,7 @@ public class PatientWS {
        			returnVal = json;
        		}
 
-    	} catch (Exception e) {
+    	} catch (mHealthException e) {
             String msg = Constants.msg;
             json = gson.toJson(msg);
 
@@ -63,6 +65,41 @@ public class PatientWS {
         return returnVal;
     		
    	}
+
+    @RequestMapping(value = "/mothersDetailByName/{motherName}", produces = "application/json")
+    public @ResponseBody String getMothersDetailByName(@PathVariable String motherName) {
+
+        String returnVal = null;
+        Gson gson = new Gson();
+        String json = null;
+        List<Patient> mother = null;
+
+        try {
+            if (patientService != null && motherName != null && motherName.length() > 0) {
+                mother = patientService.getMothersDetailByName(motherName);
+            }
+
+            if (mother != null) {
+                json = gson.toJson(mother);
+
+                returnVal = json;
+            } else {
+                String msg = Constants.msg;
+                json = gson.toJson(msg);
+
+                returnVal = json;
+            }
+
+        } catch (mHealthException e) {
+            String msg = Constants.msg;
+            json = gson.toJson(msg);
+
+            returnVal = json;
+        }
+
+        return returnVal;
+
+    }
     
 
     /**
@@ -76,17 +113,17 @@ public class PatientWS {
     	String returnVal = null;
         Gson gson = new Gson();
         String json = null;
-        Location location = null;
+        PreferredAddress address = null;
         String msg = null;
 
         try	{
 
             if (patientService != null && motherId != null && motherId.length() > 0) {
-                location = patientService.getMotherVillage(motherId);
+                address = patientService.getMotherVillage(motherId);
             }
 
-	   		if (location != null) {
-	   			json = gson.toJson(location);
+	   		if (address != null) {
+	   			json = gson.toJson(address);
 
 	   			returnVal = json;
 	   		} else {
@@ -96,7 +133,7 @@ public class PatientWS {
                 returnVal = json;
 	   		}
 
-		} catch (Exception e) {
+		} catch (mHealthException e) {
             msg = Constants.msg;
             json = gson.toJson(msg);
 
@@ -115,8 +152,7 @@ public class PatientWS {
 	 */
     
     @RequestMapping(value = "/visitListByMotherId/{motherId}", produces = "application/json")
-   	public @ResponseBody String getVisitListByPatientId(@PathVariable String motherId)
-   	{
+   	public @ResponseBody String getVisitListByPatientId(@PathVariable String motherId) {
     	String returnVal = null;
         Gson gson = new Gson();
         String json = null;
@@ -139,7 +175,7 @@ public class PatientWS {
                 returnVal = json;
 	   		}
 
-		} catch (Exception e) {
+		} catch (mHealthException e) {
             msg = Constants.msg;
             json = gson.toJson(msg);
 
@@ -180,7 +216,47 @@ public class PatientWS {
                 returnVal = json;
             }
 
-        } catch (Exception e) {
+        } catch (mHealthException e) {
+            msg = Constants.msg;
+            json = gson.toJson(msg);
+
+            returnVal = json;
+        }
+
+        return returnVal;
+
+    }
+
+    /**
+     *
+     * get details of mothers in a postal code .
+     *
+     */
+    @RequestMapping(value = "/mothersByPostalCode/{postalCode}", produces = "application/json")
+    public @ResponseBody String getMothersByPostalCode(@PathVariable String postalCode) {
+        String returnVal = null;
+        Gson gson = new Gson();
+        String json = null;
+        String msg = null;
+        List<PatientLocation> list = null;
+
+        try {
+            if (patientService != null && postalCode != null && postalCode.length() > 0) {
+                list = patientService.getMothersByPostalCode(postalCode);
+            }
+
+            if (list != null && list.size() > 0) {
+                json = gson.toJson(list);
+
+                returnVal = json;
+            } else {
+                msg = Constants.msg;
+                json = gson.toJson(msg);
+
+                returnVal = json;
+            }
+
+        } catch (mHealthException e) {
             msg = Constants.msg;
             json = gson.toJson(msg);
 

@@ -1,9 +1,8 @@
 package org.motechproject.mHealthDataInterface.web;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.motechproject.mHealthDataInterface.bean.Provider;
 import org.motechproject.mHealthDataInterface.service.HealthWorkerService;
+import java.util.List;
 
 import org.motechproject.mHealthDataInterface.util.Constants;
 import org.springframework.stereotype.Controller;
@@ -65,13 +64,12 @@ public class HealthWorkerWS {
 
     /**
 	 * 
-	 * get healthworker details
+	 * get health worker details
 	 *
 	 */
 
     @RequestMapping(value = "/healthWorkerDetail/{healthWorkerId}", produces = "application/json")
-	public @ResponseBody String getHealthWorkerDetail(@PathVariable String healthWorkerId)
-	{
+	public @ResponseBody String getHealthWorkerDetail(@PathVariable String healthWorkerId) {
         Gson gson = new Gson();
 
         String json = null;
@@ -95,12 +93,51 @@ public class HealthWorkerWS {
 
                 returnVal = json;
             }
-        } catch(Exception e) {
+        } catch(mHealthException e) {
             msg = Constants.msg;
             json = gson.toJson(msg);
             returnVal = json;
         }
          return returnVal;
 	}
+
+    /**
+     *
+     * get health workers detail by name
+     *
+     */
+
+    @RequestMapping(value = "/healthWorkersDetailByName/{healthWorkerName}", produces = "application/json")
+    public @ResponseBody String getHealthWorkersDetailByName(@PathVariable String healthWorkerName) {
+        Gson gson = new Gson();
+
+        String json = null;
+        String returnVal = null;
+        List<Provider> healthworker = null;
+        String msg = null;
+
+        try {
+
+            if (healthWorkerService != null && healthWorkerName != null && healthWorkerName.length() > 0) {
+                healthworker = healthWorkerService.getHealthWorkersDetailByName(healthWorkerName);
+            }
+
+            if (healthworker != null){
+                json = gson.toJson(healthworker);
+
+                returnVal = json;
+            } else {
+                msg = Constants.msg;
+                json = gson.toJson(msg);
+
+                returnVal = json;
+            }
+        } catch(mHealthException e) {
+            msg = Constants.msg;
+            json = gson.toJson(msg);
+            returnVal = json;
+        }
+        return returnVal;
+    }
 
 }

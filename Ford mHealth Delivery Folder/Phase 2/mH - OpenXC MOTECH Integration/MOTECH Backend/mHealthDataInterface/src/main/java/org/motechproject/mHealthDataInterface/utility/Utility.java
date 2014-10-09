@@ -123,7 +123,7 @@ public class Utility {
 	
 	/**
 	 * 
-	 * verify healthworker
+	 * verify health worker
 	 *
 	 */
 	public boolean verifyHealthWorker( String healthWorkerId) throws mHealthException {
@@ -187,7 +187,7 @@ public class Utility {
 
     /**
      *
-     * get mother details in a particular village
+     * get patient details in a particular village
      *
      */
     public List<PatientLocation> getPatientsByVillage( String villageName) throws mHealthException {
@@ -200,7 +200,7 @@ public class Utility {
 
     /**
      *
-     * get mother details in a particular postal code
+     * get patient details in a particular postal code
      *
      */
     public List<PatientLocation> getPatientsByPostalCode( String postalCode) throws mHealthException {

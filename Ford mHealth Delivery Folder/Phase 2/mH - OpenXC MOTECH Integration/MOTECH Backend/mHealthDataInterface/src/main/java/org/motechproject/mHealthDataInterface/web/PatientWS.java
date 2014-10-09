@@ -31,21 +31,21 @@ public class PatientWS {
 	 *
 	 */
     
-    @RequestMapping(value = "/motherDetail/{motherId}", produces = "application/json")
-   	public @ResponseBody String getMothersDetail(@PathVariable String motherId) {
+    @RequestMapping(value = "/patientDetail/{patientId}", produces = "application/json")
+   	public @ResponseBody String getPatientDetail(@PathVariable String patientId) {
 
     	String returnVal = null;
         Gson gson = new Gson();
         String json = null;
-        Patient mother = null;
+        Patient patient = null;
 
         try {
-            if (patientService != null && motherId != null && motherId.length() > 0) {
-                mother = patientService.getMotherDetail(motherId);
+            if (patientService != null && patientId != null && patientId.length() > 0) {
+                patient = patientService.getPatientDetail(patientId);
             }
 
-       		if (mother != null) {
-       			json = gson.toJson(mother);
+       		if (patient != null) {
+       			json = gson.toJson(patient);
 
        			returnVal = json;
        		} else {
@@ -66,21 +66,26 @@ public class PatientWS {
     		
    	}
 
-    @RequestMapping(value = "/mothersDetailByName/{motherName}", produces = "application/json")
-    public @ResponseBody String getMothersDetailByName(@PathVariable String motherName) {
+    /**
+     *
+     * get patients details by name
+     *
+     */
+    @RequestMapping(value = "/patientsDetailByName/{patientName}", produces = "application/json")
+    public @ResponseBody String getPatientsDetailByName(@PathVariable String patientName) {
 
         String returnVal = null;
         Gson gson = new Gson();
         String json = null;
-        List<Patient> mother = null;
+        List<Patient> patient = null;
 
         try {
-            if (patientService != null && motherName != null && motherName.length() > 0) {
-                mother = patientService.getMothersDetailByName(motherName);
+            if (patientService != null && patientName != null && patientName.length() > 0) {
+                patient = patientService.getPatientsDetailByName(patientName);
             }
 
-            if (mother != null) {
-                json = gson.toJson(mother);
+            if (patient != null) {
+                json = gson.toJson(patient);
 
                 returnVal = json;
             } else {
@@ -104,12 +109,12 @@ public class PatientWS {
 
     /**
 	 * 
-	 * get patient's location details 
+	 * get patients location details
 	 *
 	 */
     
-    @RequestMapping(value = "/motherVillage/{motherId}", produces = "application/json")
-   	public @ResponseBody String getPatientVillage(@PathVariable String motherId) {
+    @RequestMapping(value = "/patientVillage/{patientId}", produces = "application/json")
+   	public @ResponseBody String getPatientVillage(@PathVariable String patientId) {
     	String returnVal = null;
         Gson gson = new Gson();
         String json = null;
@@ -118,8 +123,8 @@ public class PatientWS {
 
         try	{
 
-            if (patientService != null && motherId != null && motherId.length() > 0) {
-                address = patientService.getMotherVillage(motherId);
+            if (patientService != null && patientId != null && patientId.length() > 0) {
+                address = patientService.getPatientVillage(patientId);
             }
 
 	   		if (address != null) {
@@ -147,12 +152,12 @@ public class PatientWS {
     
     /**
 	 * 
-	 * get visits details of healthworkers of a patient
+	 * get visits details of health workers of a patient
 	 *
 	 */
     
-    @RequestMapping(value = "/visitListByMotherId/{motherId}", produces = "application/json")
-   	public @ResponseBody String getVisitListByPatientId(@PathVariable String motherId) {
+    @RequestMapping(value = "/visitListByPatientId/{patientId}", produces = "application/json")
+   	public @ResponseBody String getVisitListByPatientId(@PathVariable String patientId) {
     	String returnVal = null;
         Gson gson = new Gson();
         String json = null;
@@ -160,8 +165,8 @@ public class PatientWS {
         List<Encounter> list = null;
 
         try {
-            if (patientService != null && motherId != null && motherId.length() > 0) {
-                list = patientService.getVisitListByMotherId(motherId);
+            if (patientService != null && patientId != null && patientId.length() > 0) {
+                list = patientService.getVisitListByPatientId(patientId);
             }
 
 	   		if (list != null && list.size() > 0) {
@@ -188,12 +193,12 @@ public class PatientWS {
 
     /**
      *
-     * get details of mothers in a village
+     * get details of patient in a village
      *
      */
 
-    @RequestMapping(value = "/mothersByVillage/{village}", produces = "application/json")
-    public @ResponseBody String getMothersByVillage(@PathVariable String village) {
+    @RequestMapping(value = "/patientsByVillage/{village}", produces = "application/json")
+    public @ResponseBody String getPatientsByVillage(@PathVariable String village) {
         String returnVal = null;
         Gson gson = new Gson();
         String json = null;
@@ -202,7 +207,7 @@ public class PatientWS {
 
         try {
             if (patientService != null && village != null && village.length() > 0) {
-                list = patientService.getMothersByVillage(village);
+                list = patientService.getPatientsByVillage(village);
             }
 
             if (list != null && list.size() > 0) {
@@ -229,11 +234,11 @@ public class PatientWS {
 
     /**
      *
-     * get details of mothers in a postal code .
+     * get details of patient in a postal code .
      *
      */
-    @RequestMapping(value = "/mothersByPostalCode/{postalCode}", produces = "application/json")
-    public @ResponseBody String getMothersByPostalCode(@PathVariable String postalCode) {
+    @RequestMapping(value = "/patientsByPostalCode/{postalCode}", produces = "application/json")
+    public @ResponseBody String getPatientsByPostalCode(@PathVariable String postalCode) {
         String returnVal = null;
         Gson gson = new Gson();
         String json = null;
@@ -242,7 +247,7 @@ public class PatientWS {
 
         try {
             if (patientService != null && postalCode != null && postalCode.length() > 0) {
-                list = patientService.getMothersByPostalCode(postalCode);
+                list = patientService.getPatientsByPostalCode(postalCode);
             }
 
             if (list != null && list.size() > 0) {

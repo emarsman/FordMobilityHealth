@@ -11,44 +11,44 @@ public interface PatientService {
 
     /**
      *
-     * get mother details
+     * get patient details
      *
      */
-     Patient getMotherDetail(String motherId) throws mHealthException;
+     Patient getPatientDetail(String patientId) throws mHealthException;
 
     /**
      *
-     * get mothers detail by Name
+     * get patients detail by Name
      *
      */
-    List<Patient> getMothersDetailByName(String motherName) throws mHealthException;
+    List<Patient> getPatientsDetailByName(String patientName) throws mHealthException;
 
     /**
      *
-     * get mother's village details
+     * get patients village details
      *
      */
-    PreferredAddress getMotherVillage(String motherId) throws mHealthException;
+    PreferredAddress getPatientVillage(String patientId) throws mHealthException;
 
     /**
      *
-     * get visits details of health workers of a mother
+     * get visits details of health workers of a patient
      *
      */
-     List<Encounter> getVisitListByMotherId(String motherId) throws mHealthException;
+     List<Encounter> getVisitListByPatientId(String patientId) throws mHealthException;
 
     /**
      *
-     * get mothers living in particular village
+     * get patients living in particular village
      *
      */
-     List<PatientLocation> getMothersByVillage(String village) throws mHealthException;
+     List<PatientLocation> getPatientsByVillage(String village) throws mHealthException;
 
     /**
      *
-     * get mothers living in particular postal code area
+     * get patients living in particular postal code area
      *
      */
-    List<PatientLocation> getMothersByPostalCode(String postalCode) throws mHealthException;
+    List<PatientLocation> getPatientsByPostalCode(String postalCode) throws mHealthException;
 
 }

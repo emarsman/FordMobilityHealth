@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tv_name">11dp</dimen>
+    <dimen name="tv_headings">11dp</dimen>
+    <dimen name="tv_driving_at">11dp</dimen>
+    <dimen name="tv_driving_place">11dp</dimen>
+    <dimen name="tv_time">11dp</dimen>
+    <dimen name="tv_cloud">11dp</dimen>
+    <dimen name="tv_registration">11dp</dimen>
+    <dimen name="tv_parameters">12dp</dimen>
+    <dimen name="tv_notification">15dp</dimen>
+    <dimen name="tv_crash">20dp</dimen>
+    <dimen name="tv_status">15dp</dimen>
+    <dimen name="tv_reg_parameter">20dp</dimen>
+    <dimen name="tv_splash">20dp</dimen>
+     <dimen name="tv_parameter_margin">5dp</dimen>
+
+</resources>

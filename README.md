@@ -21,7 +21,7 @@ The 'Ford mHealth Delivery Folder' contains all the code & documentation for sev
 
 ##### Mobility Health
 
-The Mobility Health folder contains the documentation describing the system and use.
+The 'Mobility Health' folder contains the documentation describing the system and use.
 
 ##### Phase 2
 

@@ -19,19 +19,19 @@ Architecture: ![arch](/images/architecture.png "Architecture")
 
 The 'Ford mHealth Delivery Folder' contains all the code & documentation for several parts of the project.
 
-### Mobility Health
+##### Mobility Health
 
 The Mobility Health folder contains the documentation describing the system and use.
 
-### Phase 2
+##### Phase 2
 
 The 'Phase 2' folder contains all the modules source code and documentation.
 
-### Phase 3
+##### Phase 3
 
 The 'Phase 3' folder contains Android demo applications and documentation on it's usage.
 
-### Golden Hour
+##### Golden Hour
 
 The 'Golden Hour' folder is source code for a demonstration Android App for the Golden Hour challenge. 
 

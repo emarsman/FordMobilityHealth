@@ -13,7 +13,7 @@ This project is intented to integrate [OpenXC][] with the [MoTech][] suite of to
 
 The below image shows the overall architecture of the system.
 
-Architecture: ![arch](/images/architecture.png "Architecture")
+Architecture: ![arch](/images/architectureNew.png "Architecture")
 
 ## Organization
 
@@ -33,7 +33,7 @@ The 'Phase 3' folder contains Android demo applications and documentation on it'
 
 ##### Golden Hour
 
-The 'Golden Hour' folder is source code for a demonstration Android App for the Golden Hour challenge. 
+The 'Golden Hour' folder is source code for a demonstration Android App for the Golden Hour challenge. This is independent from 
 
 
 ## License

@@ -33,7 +33,7 @@ The 'Phase 3' folder contains Android demo applications and documentation on it'
 
 ##### Golden Hour
 
-The 'Golden Hour' folder is source code for a demonstration Android App for the Golden Hour challenge. This is independent from 
+The 'Golden Hour' folder is source code for a demonstration Android App for the Golden Hour challenge. This is independent from MoTech.
 
 
 ## License
